@@ -1,0 +1,22 @@
+[package]
+name = "old-web-framework"
+description = "Async Web Server Framework"
+version = "0.1.0-alpha.1"
+authors = ["Mark Achée <mark@achee.com>"]
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/MarkSort/old-web-framework"
+license = "MIT"
+
+[dependencies]
+async-trait = "0.1"
+either = "1.6"
+futures = "0.3"
+hyper = { version = "0.14", features = ["full"] }
+regex = "1.4"
+tokio = { version = "1.0",  features = ["full"] }
+uuid = { version = "0.8",  features = ["v4"] }
+
+[dev-dependencies]
+async-std = { version = "1.9", features = ["attributes", "tokio1"] }
+macro_rules_attribute = "0.0"
